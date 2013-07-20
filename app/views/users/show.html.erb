@@ -1,0 +1,44 @@
+<% provide(:title, @user.name) %>
+<div class="img">
+  <%= gravatar_for @user %>
+</div>
+<div class="info2">
+  <h3>
+    <%= @user.name %><br>
+    <%= @user.email %><br>
+    <%= @user.ciudad_residencia %><br>
+  </h3>
+</div>
+<div class="clear"></div>
+<div float="left" class="span9">
+    <br>
+    <h1 class="rutas">Mis rutas</h1>
+    <div class="clear"></div>
+    <br>
+    <a src="#"><h3><b>Ruta 1</b></h3></a>
+    <b>Descripci&oacute;n:</b> Playas del sur de Tenerife
+    <br><br>
+    <img align="right" src="https://dl.dropboxusercontent.com/u/50540715/playas.jpg" alt="Playas del sur de Tenerife" height="500" weight="300"></img>
+    <br><br>
+    <b>Valoraci&oacute;n:</b> <div class="rating" data-role="rating" data-param-vote="off" data-param-rating="3.7">
+    </div>
+    <b>Compartir:</b><i class="icon-facebook"></i> | <i class="icon-twitter"></i> | <i class="icon-google-plus"></i>
+    <br>
+    <br>
+    <a src="#"><h3><b>Ruta 2</b></h3></a>
+    <b>Descripci&oacute;n:</b> Ocio nocturno
+    <br><br>
+    <b>Valoraci&oacute;n:</b> <div class="rating" data-role="rating" data-param-vote="off" data-param-rating="4.7">
+    </div>
+    <b>Compartir:</b><i class="icon-facebook"></i> | <i class="icon-twitter"></i> | <i class="icon-google-plus"></i>
+    <br>
+    <br>
+    <a src="#"><h3><b>Ruta 3</b></h3></a>
+    <b>Descripci&oacute;n:</b> Ruta por el Teide
+    <br><br>
+    <b>Valoraci&oacute;n:</b> <div class="rating" data-role="rating" data-param-vote="off" data-param-rating="2.5">
+    </div>
+    <b>Compartir:</b><i class="icon-facebook"></i> | <i class="icon-twitter"></i> | <i class="icon-google-plus"></i>
+    <br>
+    <br>
+</div>

@@ -1,0 +1,126 @@
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #999;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+/* header */
+
+.menu {
+  float: right;
+}
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #999;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+nav {
+  float: right;
+  list-style: none;
+}
+
+nav a {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Informacion de usuario */
+.img {
+  float: left;
+}
+
+.info {
+  float: right;
+}
+
+.info2 {
+  float: left;
+  margin-left: 10px;
+}
+
+/**/
+.redes_sociales {
+  float: right;
+}
+
+.registro {
+  float:left;
+}
+
+/**/
+.clear {
+  clear: left;
+}
+
+.rutas {
+  float: left;
+}
+
+.div_rutas {
+  float: left;
+}
+
+.playas {
+  float: right;
+}

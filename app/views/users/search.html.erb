@@ -1,0 +1,14 @@
+<% provide(:title, 'Buscar usuarios') %>
+<h1>Resultados de la b&uacute;squeda</h1>
+
+<% if @usuarios.any? %>
+  <div class="user_avatars">
+      <% @usuarios.each do |usuario| %>
+          <%= link_to gravatar_for(usuario, size:40), usuario %>
+          <%= link_to usuario.name, :action => 'show', :id => usuario.id %>
+          <br><br><br>
+      <% end %>
+  </div>
+<% else %>
+  <h3>No se han encontrado resultados</h3>
+<% end %>

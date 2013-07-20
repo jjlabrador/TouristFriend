@@ -1,0 +1,26 @@
+<% if signed_in? %>
+  <div class="row">
+    <aside class="span5">
+      <%= render 'shared/user_info' %>
+    </aside>
+  </div>  
+<% else %>
+  <div class="center hero-unit">
+    <h1><strong>Bienvenido a TouristFriend</strong></h1>
+
+    <h2>
+    <br>
+    Encuentra la ruta tur&iacute;stica que m&aacute;s se ajusta a tus gustos.<br><br>
+    Crea las tuyas propias.<br><br>
+    Comp&aacute;rtelas ;) <br><br>
+    </h2>
+
+    <%= link_to "Regístrate", signup_path, class: "button default" %>
+    <br>
+    <br>
+    <div>
+      <h2><strong>¡Descarga nuestra APP ahora!</strong></h2>
+      <a href="http://www.windowsphone.com/es-es/store" class="button bg-color-green fg-color-white">Descargar <i class="icon-download"></i></a>
+    </div>
+  </div>
+<% end %> 

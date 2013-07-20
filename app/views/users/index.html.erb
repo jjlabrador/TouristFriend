@@ -1,0 +1,11 @@
+<% provide(:title, 'Usuarios') %>
+<h1>Usuarios</h1>
+
+<%= will_paginate  @users, :previous_label => t(" "), :next_label => t(" ") %>
+
+<ul class="users">
+    <%= render @users %>
+</ul>
+
+<%= will_paginate  @users, :previous_label => t(" "), :next_label => t(" ") %>
+

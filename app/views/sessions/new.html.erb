@@ -1,0 +1,21 @@
+<% provide(:title, "Iniciar sesión") %>
+<h1>Iniciar sesión</h1>
+
+<div align="center">
+  <div class="input-control text">
+    <%= form_for(:session, url: sessions_path) do |f| %>
+      <br>
+      <%= f.label :email, "Email" %>
+      <%= f.text_field :email, class: "input-control text span3" %>
+      <br>
+      <%= f.label :password, "Contraseña" %>
+      <%= f.password_field :password, class: "input-control text span3" %>
+      <br>
+<p></p>
+      <%= f.submit "Iniciar sesión", class: "bg-color-blue" %>
+    <% end %>
+    <br>
+    <h3>¿Eres nuevo?</h3>
+    <%= link_to "Regístrate", signup_path, class: "button default" %>
+  </div>
+</div>

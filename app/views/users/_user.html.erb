@@ -1,0 +1,10 @@
+ <div class="blanco">
+<li>
+  <%= gravatar_for user, size: 52 %>
+  <%= link_to user.name, user %>
+  <% if current_user.admin? && !current_user?(user) && !user.admin? %>
+    <%= link_to "Borrar", user, method: :delete,
+                                  data: { confirm: "¿Estás seguro?" } ,class: "button mini bg-color-red fg-color-white"%>
+  <% end %>
+</li>
+</div>

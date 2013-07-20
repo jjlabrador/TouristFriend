@@ -1,0 +1,40 @@
+<div class="img">
+  <a href="<%= user_path(current_user) %>">
+    <%= gravatar_for current_user, size: 90 %>
+  </a>
+</div>
+<div class="info">
+  <h3>
+    <%= current_user.name %>
+    </h3>
+   <span>
+    <%= link_to "Ver mi perfil", current_user, class: "button default"%>
+  </span>
+</div>
+<div class="clear"></div>
+<div class="span12" float="left">
+  <br>
+  <h1 class="rutas">Rutas sugeridas</h1>
+  <div class="clear"></div>
+  <br>
+  <a src="#"><h3><b>Ruta 1</b></h3></a>
+  <b>Descripci&oacute;n:</b> Ruta de restauración por el norte de la isla
+  <br><br>
+  <img align="right" src="http://dl.dropboxusercontent.com/u/50540715/mapa_restaurantes.jpg" alt="Restaurantes del norte de Tenerife" height="150" weight="100"></img>
+  <br><br><br><br>
+  <b>Valoraci&oacute;n:</b> <div class="rating" data-role="rating" data-param-vote="off" data-param-rating="4.7">
+  </div>
+  <br>
+  <a src="#"><h3><b>Ruta 2</b></h3></a>
+  <b>Descripci&oacute;n:</b> Loro Parque
+  <br><br>
+  <b>Valoraci&oacute;n:</b> <div class="rating" data-role="rating" data-param-vote="off" data-param-rating="4.0">
+  </div>
+  <br>
+  <a src="#"><h3><b>Ruta 3</b></h3></a>
+  <b>Descripci&oacute;n:</b> Playas del norte de la isla
+  <br><br>
+  <b>Valoraci&oacute;n:</b> <div class="rating" data-role="rating" data-param-vote="off" data-param-rating="5.0">
+  </div>
+  <br>
+</div>

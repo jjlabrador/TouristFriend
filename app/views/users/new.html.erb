@@ -1,0 +1,17 @@
+<% provide(:title, 'Registro') %>
+<h1>Registro</h1>
+<br>
+<div align="center">
+  <div class="input-control text"> 
+  <%= form_for(@user) do |f| %>
+    <%= render 'fields', f: f %>
+      <br/>
+      <%= f.submit "Crear mi cuenta", class: "btn btn-success" %>
+    <% end %>
+  </div>
+  <h3>O inicia sesi&oacute;n con</h3>
+  <br>
+  <%= link_to image_tag("Facebook.png", alt: "Facebook"), 'http://www.facebook.com/' %>
+  <%= link_to image_tag("twitter.jpg", alt: "Twitter"), 'http://www.twitter.com/' %>
+  <%= link_to image_tag("google.png", alt: "Google +"), 'http://www.plus.google.com/' %>
+</div>
